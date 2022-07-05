@@ -28,6 +28,17 @@ body {
     radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
 }
 
+[role=tooltip].popup-content {
+  width: auto;
+  box-shadow: 0 0 3pxrgba(0,0,0,.16);
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+}
+
+.popup-arrow {
+  display: none;
+}
 .gradient-bg-transactions {
   background-color: #0f0e13;
   background-image: 

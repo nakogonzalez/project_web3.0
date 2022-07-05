@@ -1,15 +1,12 @@
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
+import { Routes, Route } from 'react-router-dom'
+import Home  from "./screens/Home"
+import LoginScreen  from "./screens/LoginScreen"
 
 const App = () => (
-  <div className="min-h-screen">
-    <div className="gradient-bg-welcome">
-      <Navbar />
-      <Welcome />
-    </div>
-    <Services />
-    <Transactions />
-    <Footer />
-  </div>
+  <Routes>
+    <Route path="/" element={<Home />}></Route>
+    <Route path="/login" element={<LoginScreen />}></Route>
+  </Routes>
 );
 
 export default App;
